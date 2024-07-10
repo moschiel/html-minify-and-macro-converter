@@ -193,7 +193,9 @@ When developing a web server with the ESP32, if not using SPIFFS to store HTML f
    
 2. **Place the Output and HTML Files**: Ensure the output and html files are located at './main' and './html' folders at the root of your ESP-IDF project directory.
 
-3. **Modify CMakeLists.txt**: Add a custom target to run the `HTML to Macro String Converter` before the build process. Below is an example of how to modify your `CMakeLists.txt`:
+3. **Ensure the Output File Contains the Makers**: Make sure your output header file (e.g., `html_macros.h`) contains the start and end markers.
+
+4. **Modify CMakeLists.txt**: Add a custom target to run the `HTML to Macro String Converter` before the build process. Below is an example of how to modify your `CMakeLists.txt`:
 
     ```cmake
     cmake_minimum_required(VERSION 3.5)
@@ -213,7 +215,6 @@ When developing a web server with the ESP32, if not using SPIFFS to store HTML f
     add_dependencies(app run_html_to_macro)
     ```
 
-4. **Ensure the Output Header File Exists**: Make sure your output header file (e.g., `html_macros.h`) exists and contains the start and end markers.
 
 ### Building the Project
 

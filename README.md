@@ -1,5 +1,5 @@
 
-# HTML to Macro String Converter
+# HTML Minify And Macro Converter
 
 This project is designed to automate the process of converting HTML files into C/C++ macros, making it easier to embed HTML code in projects such as web servers running on ESP32. This tool reads HTML files and converts them into string macros that can be directly used in C/C++ code, thus eliminating the need for manual conversion. It is simple to include this tool in the pre-build process of any project, such as ESP-IDF, to ensure HTML content is always up-to-date.
 

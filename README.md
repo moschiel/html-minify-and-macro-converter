@@ -5,7 +5,7 @@ This project is designed to automate the process of converting HTML files into C
 
 ## Background
 
-While developing a web server with the ESP32, I found that embedding HTML directly in the code by converting it to strings manually was cumbersome and error-prone. I created this tool to automate the process, allowing for easy updates and modifications to the HTML content without manual conversion. This not only saves time but also ensures that the HTML content is always up-to-date and correctly formatted as macros.
+While developing a web server with the ESP_IDF, I found that embedding HTML directly in the code by converting it to strings manually was cumbersome and error-prone. I created this tool to automate the process, allowing for easy updates and modifications to the HTML content without manual conversion. This not only saves time but also ensures that the HTML content is always up-to-date and correctly formatted as macros.
 
 I could have placed the HTML inside a storage partition with SPIFFS, avoiding the use of macros. However, I prefer to keep the HTML in the source code because when performing OTA (Over-the-Air) firmware updates, everything updates at once. If I had placed the HTML in the SPIFFS partition, I would have had to manage the OTA for that partition as well, which I wanted to avoid.
 
@@ -185,7 +185,7 @@ Assuming the parameter `minify` is set to `false`, the output file (`html_macros
 
 ## Automated Pre-Build for ESP-IDF
 
-When developing a web server with the ESP32, if not using SPIFFS to store HTML files, it's common to embed HTML content directly into the firmware. Manually converting HTML files to C/C++ string literals is tedious and error-prone. This tool automates the conversion process, making it easy to update and manage HTML content within your ESP32 projects.
+When developing a web server with the ESP-IDF, if not using SPIFFS to store HTML files, it's common to embed HTML content directly into the firmware. Manually converting HTML files to C/C++ string literals is tedious and error-prone. This tool automates the conversion process, making it easy to update and manage HTML content within your ESP-IDF projects.
 
 ### Example Configuration for ESP-IDF
 
@@ -224,7 +224,7 @@ Run the following command to build your project:
 idf.py build
 ```
 
-This command will execute the HTML to Macro String Converter before compiling the ESP32 project, ensuring that your HTML content is always up-to-date and correctly formatted as C/C++ macros.
+This command will execute the HTML to Macro String Converter before compiling the ESP-IDF project, ensuring that your HTML content is always up-to-date and correctly formatted as C/C++ macros.
 
 ## Important Notes
 

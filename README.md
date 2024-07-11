@@ -91,7 +91,7 @@ In this example:
 
 ## Usage (Minify to Macro)
 
-In `minify-to-macro` mode, the provided HTML files will be minified and stringfied to C/C++ macros.
+In `minify-to-macro` mode, the provided HTML files will be minified and stringified to C/C++ macros.
 
 ### Example Preparing File for Macros
 
@@ -115,7 +115,7 @@ Anything outside of the markers will not be modified, so feel free to add anythi
 
 1. **Mode**: The operation mode (`minify-to-macro`).
 2. **Macro File Path**: The path to the header file where the macros will be inserted.
-3. **HTML File Paths**: Paths to the HTML files to be converted into C/C++ stringfied macros.
+3. **HTML File Paths**: Paths to the HTML files to be converted into C/C++ stringified macros.
 
 In `minify-to-macro` mode, provide the path to the output header file followed by the HTML file paths to be converted into macros.
 
@@ -130,9 +130,9 @@ python html_minify.py minify-to-macro ./html_macros.h ./index.html ./about.html
 ```
 
 In this example:
-- The HTML files `index.html` and `about.html` will be minified and stringfied to C/C++ macros.
+- The HTML files `index.html` and `about.html` will be minified and stringified to C/C++ macros.
 - The macros will be inserted into `./html_macros.h` between the `START HTML MACROS AREA` and `END HTML MACROS AREA` markers.
-- The name given to the macro is a all capitalized version of the file name
+- The name given to the macro is a all-capitalized version of the file name
 
 ### Example Output File Updated with Macros 
 
@@ -169,7 +169,7 @@ In this example:
 ## Error Handling
 
 - If the HTML files do not exist, the tool will report an error.
-- In `minify-to-macro`, if the output file do not exist, the tool will report an error.
+- In `minify-to-macro`, if the output file does not exist, the tool will report an error.
 - In `minify-to-macro`, if the start or end markers are not found, the tool will report an error.
 
 ## Contributing
